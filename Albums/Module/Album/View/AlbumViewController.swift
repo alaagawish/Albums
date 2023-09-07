@@ -6,24 +6,67 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
-class AlbumViewController: UIViewController {
-
+class AlbumViewController: UIViewController, UISearchBarDelegate {
+    
+    @IBOutlet weak var imagesCollection: UICollectionView!
+    @IBOutlet weak var albumTitle: UILabel!
+    @IBOutlet weak var searchBar: UISearchBar!
+    var currentPhotos: [Photo] = []
+    var allPhotos: [Photo] = []
+    var albumViewModel: AlbumViewModel!
+    var album: Album!
+    var disposeBag: DisposeBag!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        initViews()
+        albumViewModel.getPhotos(albumId: album.id ?? 1)
+        setData()
+        search()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func initViews() {
+        disposeBag = DisposeBag()
+        searchBar.delegate = self
+        albumViewModel = AlbumViewModel(network: Network())
+        albumViewModel.passPhotosToViewController = {
+            [weak self] in
+            self?.allPhotos = self?.albumViewModel.photos ?? []
+            self?.currentPhotos = self?.albumViewModel.photos ?? []
+            self?.imagesCollection.reloadData()
+            self?.search()
+        }
+        
     }
-    */
-
+    
+    func setData() {
+        albumTitle.text = album.title
+    }
+    
+    func search() {
+        searchBar.rx.text.subscribe {[weak self] text in
+            guard let self = self else {return}
+            self.filterList(searchText: text!)
+        }.disposed(by: disposeBag)
+    }
+    
+    func filterList(searchText: String) {
+        if(!searchText.isEmpty) {
+            currentPhotos = allPhotos.filter{ $0.title.lowercased().contains(searchText.lowercased())}
+            if currentPhotos.isEmpty {
+                currentPhotos = []
+            }
+        }else {
+            currentPhotos = allPhotos
+        }
+        self.imagesCollection.reloadData()
+    }
+    
+    
+    
 }

@@ -20,13 +20,16 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-          let albumDetails = self.storyboard?.instantiateViewController(withIdentifier: Constants.albumStoryboard) as! AlbumViewController
-          
-          
-              navigationController?.pushViewController(albumDetails, animated: true)
-              
-          
-      }
+        let albumDetails = self.storyboard?.instantiateViewController(withIdentifier: Constants.albumStoryboard) as! AlbumViewController
+        
+        albumDetails.album = allAlbums[indexPath.row]
+        navigationController?.pushViewController(albumDetails, animated: true)
+        
+        
+    }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(50)
+    }
     
 }

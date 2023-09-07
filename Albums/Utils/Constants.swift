@@ -17,5 +17,6 @@ struct Constants {
     static let albumId = "albumId"
     static let albumCell = "albumCell"
     static let albumStoryboard = "albumStoryboard"
+    static let photoIdentifier = "photoIdentifier"
     
 }
