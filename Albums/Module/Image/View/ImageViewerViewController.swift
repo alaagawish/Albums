@@ -39,7 +39,7 @@ class ImageViewerViewController: UIViewController, UIScrollViewDelegate {
         guard let image = selectedImage.image else { return }
         
         let viewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-        
+        viewController.modalPresentationStyle = .fullScreen
         present(viewController, animated: true)
     }
     

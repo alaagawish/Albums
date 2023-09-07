@@ -24,7 +24,6 @@
 		6183C9302AA91E96005C6896 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6183C92F2AA91E96005C6896 /* Company.swift */; };
 		61E08C562AA8D1B7007412D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E08C552AA8D1B7007412D0 /* AppDelegate.swift */; };
 		61E08C582AA8D1B7007412D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E08C572AA8D1B7007412D0 /* SceneDelegate.swift */; };
-		61E08C5A2AA8D1B7007412D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E08C592AA8D1B7007412D0 /* ViewController.swift */; };
 		61E08C5D2AA8D1B7007412D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E08C5B2AA8D1B7007412D0 /* Main.storyboard */; };
 		61E08C5F2AA8D1B9007412D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E08C5E2AA8D1B9007412D0 /* Assets.xcassets */; };
 		61E08C622AA8D1B9007412D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E08C602AA8D1B9007412D0 /* LaunchScreen.storyboard */; };
@@ -76,7 +75,6 @@
 		61E08C522AA8D1B7007412D0 /* Albums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E08C552AA8D1B7007412D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61E08C572AA8D1B7007412D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		61E08C592AA8D1B7007412D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61E08C5C2AA8D1B7007412D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61E08C5E2AA8D1B9007412D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61E08C612AA8D1B9007412D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -261,7 +259,6 @@
 				614B0F7C2AA8E98E00641C31 /* Service */,
 				614B0F7B2AA8E98800641C31 /* Module */,
 				614B0F7A2AA8E98200641C31 /* Model */,
-				61E08C592AA8D1B7007412D0 /* ViewController.swift */,
 				61E08C632AA8D1B9007412D0 /* Info.plist */,
 				61E08C5E2AA8D1B9007412D0 /* Assets.xcassets */,
 				61E08C572AA8D1B7007412D0 /* SceneDelegate.swift */,
@@ -453,7 +450,6 @@
 				614B0F8A2AA8EA5C00641C31 /* ProfileViewController.swift in Sources */,
 				61E62F222AA96873006EAE04 /* AlbumCollectionViewCell.swift in Sources */,
 				61E62F242AA968D1006EAE04 /* AlbumViewController+CollectionView.swift in Sources */,
-				61E08C5A2AA8D1B7007412D0 /* ViewController.swift in Sources */,
 				61E08C562AA8D1B7007412D0 /* AppDelegate.swift in Sources */,
 				6183C9212AA91362005C6896 /* APIService.swift in Sources */,
 				61E62F282AA98984006EAE04 /* ImageViewerViewController.swift in Sources */,

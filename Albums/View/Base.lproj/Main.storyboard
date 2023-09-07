@@ -200,10 +200,10 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVu-up-fr3">
-                                <rect key="frame" x="0.0" y="110" width="393" height="742"/>
+                                <rect key="frame" x="0.0" y="109" width="393" height="743"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AZf-CV-7O1">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="742"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="743"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -222,10 +222,9 @@
                         <viewLayoutGuide key="safeArea" id="S14-Yt-S98"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dVu-up-fr3" firstAttribute="top" secondItem="S14-Yt-S98" secondAttribute="top" constant="50" id="3iW-bO-Yeu"/>
                             <constraint firstItem="BYz-35-QJF" firstAttribute="leading" secondItem="S14-Yt-S98" secondAttribute="leading" constant="16" id="60L-SO-KNN"/>
-                            <constraint firstItem="dVu-up-fr3" firstAttribute="top" secondItem="BYz-35-QJF" secondAttribute="bottom" constant="8" id="CNG-dS-b5z"/>
                             <constraint firstItem="dVu-up-fr3" firstAttribute="leading" secondItem="S14-Yt-S98" secondAttribute="leading" id="WMM-xY-DFh"/>
-                            <constraint firstItem="dVu-up-fr3" firstAttribute="top" secondItem="LVV-ue-wVh" secondAttribute="bottom" constant="8" id="ZfP-r6-D5C"/>
                             <constraint firstItem="BYz-35-QJF" firstAttribute="top" secondItem="S14-Yt-S98" secondAttribute="top" constant="8" id="aNa-14-Cyr"/>
                             <constraint firstItem="LVV-ue-wVh" firstAttribute="top" secondItem="S14-Yt-S98" secondAttribute="top" constant="8" id="bdW-3V-RDx"/>
                             <constraint firstItem="dVu-up-fr3" firstAttribute="trailing" secondItem="S14-Yt-S98" secondAttribute="trailing" id="gQB-9C-ebN"/>
