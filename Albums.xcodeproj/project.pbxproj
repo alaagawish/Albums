@@ -35,6 +35,7 @@
 		61E08C8E2AA8DED6007412D0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 61E08C8D2AA8DED6007412D0 /* RxCocoa */; };
 		61E08C962AA8DED6007412D0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 61E08C952AA8DED6007412D0 /* RxSwift */; };
 		61E08C9F2AA8DF94007412D0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 61E08C9E2AA8DF94007412D0 /* Kingfisher */; };
+		61E62F202AA95FF9006EAE04 /* ProfileViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E62F1F2AA95FF9006EAE04 /* ProfileViewController+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		61E08C722AA8D1B9007412D0 /* AlbumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E08C762AA8D1B9007412D0 /* AlbumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsUITests.swift; sourceTree = "<group>"; };
 		61E08C782AA8D1B9007412D0 /* AlbumsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		61E62F1F2AA95FF9006EAE04 /* ProfileViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				614B0F892AA8EA5C00641C31 /* ProfileViewController.swift */,
+				61E62F1F2AA95FF9006EAE04 /* ProfileViewController+TableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				61E08C582AA8D1B7007412D0 /* SceneDelegate.swift in Sources */,
 				614B0F8E2AA8EA7800641C31 /* AlbumViewModel.swift in Sources */,
 				6183C92C2AA91DF9005C6896 /* Address.swift in Sources */,
+				61E62F202AA95FF9006EAE04 /* ProfileViewController+TableView.swift in Sources */,
 				614B0F922AA8EABD00641C31 /* NetworkProtocol.swift in Sources */,
 				6183C9262AA91D65005C6896 /* User.swift in Sources */,
 				6183C9302AA91E96005C6896 /* Company.swift in Sources */,
