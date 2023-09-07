@@ -35,4 +35,11 @@ extension AlbumViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedImage = currentPhotos[indexPath.item] // Replace with your data source
+        let imageViewerVC = self.storyboard?.instantiateViewController(withIdentifier: Constants.imageViewerID) as! ImageViewerViewController
+        imageViewerVC.selectedPhoto = selectedImage
+        self.present(imageViewerVC, animated: true, completion: nil)
+    }
 }
