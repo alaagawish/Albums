@@ -11,6 +11,7 @@ import RxSwift
 
 class AlbumViewController: UIViewController, UISearchBarDelegate {
     
+    @IBOutlet weak var selectedImageView: UIImageView!
     @IBOutlet weak var imagesCollection: UICollectionView!
     @IBOutlet weak var albumTitle: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!

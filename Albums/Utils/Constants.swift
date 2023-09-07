@@ -18,5 +18,6 @@ struct Constants {
     static let albumCell = "albumCell"
     static let albumStoryboard = "albumStoryboard"
     static let photoIdentifier = "photoIdentifier"
+    static let imageViewerID = "imageViewerID"
     
 }

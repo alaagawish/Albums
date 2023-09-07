@@ -25,19 +25,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2Z-AD-b6v">
-                                <rect key="frame" x="16" y="201" width="377" height="24"/>
+                                <rect key="frame" x="16" y="199.66666666666666" width="377" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Albums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEh-SS-MrX">
-                                <rect key="frame" x="16.000000000000007" y="241" width="102.66666666666669" height="24"/>
+                                <rect key="frame" x="16.000000000000007" y="239.66666666666666" width="102.66666666666669" height="23.999999999999972"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mky-jE-2mU">
-                                <rect key="frame" x="0.0" y="273" width="393" height="579"/>
+                                <rect key="frame" x="0.0" y="271.66666666666669" width="393" height="580.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="albumCell" id="Ni7-Rp-Tn7">
@@ -55,8 +55,8 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yT8-UA-kBg">
-                                <rect key="frame" x="16" y="163" width="62" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <rect key="frame" x="16" y="163" width="57" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -175,6 +175,72 @@
             </objects>
             <point key="canvasLocation" x="1880.1526717557251" y="-32.394366197183103"/>
         </scene>
+        <!--Image Viewer View Controller-->
+        <scene sceneID="WnR-tS-Hu4">
+            <objects>
+                <viewController storyboardIdentifier="imageViewerID" wantsFullScreenLayout="YES" id="fVc-2F-DVR" customClass="ImageViewerViewController" customModule="Albums" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bxo-6f-qS3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVV-ue-wVh">
+                                <rect key="frame" x="282" y="67" width="95" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right.fill" catalog="system" title="Share"/>
+                                <connections>
+                                    <action selector="share:" destination="fVc-2F-DVR" eventType="touchUpInside" id="w2z-N3-X4j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYz-35-QJF">
+                                <rect key="frame" x="16" y="67" width="102" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark.app.fill" catalog="system" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancel:" destination="fVc-2F-DVR" eventType="touchUpInside" id="ia9-4J-ZjL"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVu-up-fr3">
+                                <rect key="frame" x="0.0" y="109" width="393" height="743"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AZf-CV-7O1">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="743"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AZf-CV-7O1" firstAttribute="top" secondItem="dVu-up-fr3" secondAttribute="top" id="D2g-4n-Bdp"/>
+                                    <constraint firstAttribute="bottom" secondItem="AZf-CV-7O1" secondAttribute="bottom" id="HM0-EJ-2nL"/>
+                                    <constraint firstAttribute="trailing" secondItem="AZf-CV-7O1" secondAttribute="trailing" id="ojI-Gw-Rrv"/>
+                                    <constraint firstItem="AZf-CV-7O1" firstAttribute="leading" secondItem="dVu-up-fr3" secondAttribute="leading" id="tqt-2E-map"/>
+                                    <constraint firstItem="AZf-CV-7O1" firstAttribute="centerY" secondItem="dVu-up-fr3" secondAttribute="centerY" id="usN-dt-JZY"/>
+                                    <constraint firstItem="AZf-CV-7O1" firstAttribute="centerX" secondItem="dVu-up-fr3" secondAttribute="centerX" id="wlx-Yx-TNw"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="fVc-2F-DVR" id="mrW-OP-6a6"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S14-Yt-S98"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dVu-up-fr3" firstAttribute="top" secondItem="S14-Yt-S98" secondAttribute="top" constant="50" id="3iW-bO-Yeu"/>
+                            <constraint firstItem="BYz-35-QJF" firstAttribute="leading" secondItem="S14-Yt-S98" secondAttribute="leading" constant="16" id="60L-SO-KNN"/>
+                            <constraint firstItem="dVu-up-fr3" firstAttribute="leading" secondItem="S14-Yt-S98" secondAttribute="leading" id="WMM-xY-DFh"/>
+                            <constraint firstItem="BYz-35-QJF" firstAttribute="top" secondItem="S14-Yt-S98" secondAttribute="top" constant="8" id="aNa-14-Cyr"/>
+                            <constraint firstItem="LVV-ue-wVh" firstAttribute="top" secondItem="S14-Yt-S98" secondAttribute="top" constant="8" id="bdW-3V-RDx"/>
+                            <constraint firstItem="dVu-up-fr3" firstAttribute="trailing" secondItem="S14-Yt-S98" secondAttribute="trailing" id="gQB-9C-ebN"/>
+                            <constraint firstItem="S14-Yt-S98" firstAttribute="trailing" secondItem="LVV-ue-wVh" secondAttribute="trailing" constant="16" id="ghU-9g-tT8"/>
+                            <constraint firstAttribute="bottom" secondItem="dVu-up-fr3" secondAttribute="bottom" id="yiy-al-z9q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scroller" destination="dVu-up-fr3" id="vfD-Uu-wen"/>
+                        <outlet property="selectedImage" destination="AZf-CV-7O1" id="xal-pu-IoT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZZT-qz-vor" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2819.0839694656488" y="-28.169014084507044"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xii-qC-oSf">
             <objects>
@@ -195,6 +261,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="104"/>
+        <image name="xmark.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
